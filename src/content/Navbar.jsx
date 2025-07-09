@@ -1,8 +1,9 @@
 import React from 'react';
 import { useContext } from 'react';
+import { UserContext } from './Usercontext';
 
 function Navbar() {
-    const UserName = useContext(UserContext);
+    const UserName = useContext(UserContext);   
 
     console.log(UserName);
 
@@ -14,7 +15,7 @@ return (
 
     <span >Contact</span>
 
-    <Mark> Hello {UserName}</Mark>
+  Hello <mark> {UserName}</mark>
 
     </div>
      );
